@@ -1,0 +1,278 @@
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* padding: 1.5% 3%; */
+    padding: .5em 1em;
+    background-color: #fbf3f2;
+}
+
+.nav1 a {
+    color: #494848;
+    text-decoration: none;
+}
+
+.nav1 a:hover, .nav1 a:active {
+    color: #1c768f;
+}
+
+.nav1 ul{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    gap: 7%;
+    font-family: poppins, sans-serif;
+    font-size: 0.9em;
+}
+
+.nav1 {
+    margin-top: 1.5%;
+}
+
+.logo {
+    width: 11em;
+    margin-top: 7%;
+}
+
+hr {
+    margin-top: 5%;
+    color: #d8d8d8;
+}
+
+.section-header {
+    text-align: center;
+    margin-top: 8%;
+    font-family: montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+form {
+    margin-top: 1.5em;
+    font-family: roboto, sans-serif;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+form input {
+    width: 100%;
+    height: 2em;
+    padding: .3em;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container:not(:nth-last-of-type(1)) {
+    margin-bottom: .9em;
+}
+
+.input-container span {
+    width: 10%;
+}
+
+.result {
+    margin-top: 5%;
+    border: 1px solid #1c768f;
+    border-radius: 1em;
+    padding: .5em;
+    line-height: 1.4em;
+    display: none;
+}
+
+.arrise {
+    display: block;
+}
+
+.execute {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    color: white;
+    gap: 1em;
+    margin-top: 8%;
+}
+
+.reset, .submit {
+    background-color: #1c768f;
+    border-radius: 1em;
+    padding: .5em;
+    width: 50%;
+    cursor: pointer;
+}
+
+.reset:hover, .submit:hover, .reset:active, .submit:active {
+    opacity: .9;
+}
+
+/* Hide arrow from input number -> Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide arrow from input number -> Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+footer {
+    background-color: #fa991c;
+    color: #032539;
+    display: flex;
+    height: 5em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4em -1em -.5em -1em;
+    padding: 3%;
+    font-family: roboto, sans-serif;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+@media print, screen and (min-width: 600px) {
+    .nav1 ul{
+        gap: 6%;
+    }
+
+    .logo {
+        width: 12em;
+        margin-top: 3%;
+    }
+
+    hr {
+        margin-top: 4%;
+    }
+
+    .section-header {
+        margin: 5%;
+    }
+
+    .result {
+        margin-top: 4%;
+    }
+
+    .execute {
+        margin-top: 7%;
+    }
+
+    form {
+        padding: 0 5%;
+    }
+}
+
+@media print, screen and (min-width: 768px) {
+    .nav1 ul{
+        gap: 5%;
+    }
+
+    .logo {
+        width: 13em;
+        margin-top: 2.5%;
+    }
+
+    hr {
+        margin-top: 3%;
+    }
+
+    .section-header {
+        margin: 4%;
+    }
+
+    .result {
+        margin-top: 3%;
+    }
+
+    .execute {
+        margin-top: 6%;
+    }
+
+    form {
+        padding: 0 10%;
+    }
+}
+
+@media print, screen and (min-width: 992px) {
+    .nav1 ul{
+        gap: 4%;
+        font-size: 1.05em;
+    }
+
+    .logo {
+        width: 14em;
+        margin-top: 2%;
+    }
+
+    hr {
+        margin-top: 2%;
+    }
+
+    .section-header {
+        font-size: 1.2em;
+        margin: 3%;
+    }
+
+    .result {
+        margin-top: 2%;
+    }
+
+    .execute {
+        margin-top: 5%;
+    }
+
+    form {
+        padding: 0 15%;
+    }
+
+    form, footer {
+        font-size: 1.1em;
+    }
+    
+    footer {
+        margin: 4em -.92em -.5em -.92em;
+    }
+}
+
+@media print, screen and (min-width: 1200px) {
+    .nav1 ul{
+        gap: 3%;
+    }
+
+    .execute {
+        margin-top: 3%;
+    }
+
+    hr {
+        margin-top: 1.5%;
+    }
+
+    form {
+        padding: 0 20%;
+    }
+}

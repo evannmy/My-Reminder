@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="zakat.css">
+        <title>Zakat</title>
+    </head>
+    <body>
+        <nav class="nav1">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <a href="index.html">
+            <img src="images/logo3.png" alt="logo" class="logo">
+        </a>
+
+        <hr>
+
+        <p class="section-header">Kalkulator Zakat</p>
+
+        <form action="">
+            <label for="gaji">Gaji per bulan:</label>
+            <div class="input-container">
+                <span>Rp.</span>
+                <input class="gaji" type="number" id="gaji" name="gaji" min="0">
+            </div>
+
+            <label for="penghasilan_lain">Penghasilan lain per bulan:</label>
+            <div class="input-container">
+                <span>Rp.</span>
+                <input class="penghasilan_lain" type="number" id="penghasilan_lain" name="penghasilan_lain" min="0">
+            </div>
+
+            <label for="jumlah">Jumlah penghasilan per bulan:</label>
+            <div class="input-container">
+                <span>Rp.</span>
+                <input class="jumlah" type="text" id="jumlah" name="jumlah" min="0" readonly>
+            </div>
+
+            <label for="nisab-tahun">Nisab per tahun</label>
+            <div class="input-container nisab">
+                <span>Rp.</span>
+                <input type="text" id="nisab-tahun" name="nisab-tahun" value="82.312.725" disabled>
+            </div>
+
+            <label for="nisab-bulan">Nisab per bulan:</label>
+            <div class="input-container nisab">
+                <span>Rp.</span>
+                <input type="text" id="nisab-bulan" name="nisab-bulan" value="6.859.394" disabled>
+            </div>
+
+            <p class="result">test</p>
+
+            <div class="execute">
+                <div class="reset">Reset</div>
+                <div class="submit">Hitung Zakat</div>
+            </div>
+        </form>
+
+        <footer>
+            <p>Copyright &copy;2024. Designed By Evan</p>
+            <p>Made with ❤️</p>
+        </footer>
+
+        <script src="zakat.js"></script>
+    </body>
+</html>
